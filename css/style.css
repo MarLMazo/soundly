@@ -1,0 +1,315 @@
+body {
+
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+main{
+  z-index: 10;
+}
+h1, h2, h3, h4, h5, h6, p{
+  margin: 2rem 0;
+}
+h1{
+  font-size: 3rem;
+  font-weight: bold;
+}
+input{
+  border: none;
+  padding: 8px 20px;
+  border-radius: 50px;
+
+}
+textarea{
+  border:none;
+  border-radius: 50px;
+}
+.input{
+  background: #f7f7f7;
+  max-width: 100%;
+  width: 300px;
+}
+a:hover{
+  text-decoration: none;
+}
+/* navigation styles */
+.vertical-nav {
+  min-width: 25rem;
+  width: 25rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s;
+  background: #f7f7f7;
+}
+
+.page-wrapper {
+  width: calc(100% - 25rem);
+  margin-left: 25rem;
+  transition: all 0.4s;
+}
+
+.logo{
+  padding: 2.5rem 0 0 3rem;
+  margin: 20px 0;
+}
+.logo img{
+  margin-bottom: 1rem;
+}
+.container-fluid{
+  padding: 0 15%;
+  margin: 8rem 0 10rem 0;
+
+
+}
+#sidebarCollapse{
+  z-index: 1000;
+}
+#sidebarCollapse:hover{
+  color: #22BC9C;
+}
+#sidebar{
+  z-index: 100;
+}
+#sidebar.active {
+  margin-left: -25rem;
+}
+/* .wrapper{
+  margin-left: 25rem;
+} */
+.wrapper.active {
+  width: 100%;
+  margin: 0;
+}
+
+
+.text-uppercase {
+  letter-spacing: 0.1em;
+}
+.text-dark{
+  color: #606060;
+}
+
+.text-padding{
+  padding: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -25rem;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  .wrapper {
+    width: 100%;
+    margin: 0;
+  }
+  .wrapper.active {
+    margin-left: 25rem;
+    width: calc(100% - 25rem);
+  }
+}
+/* end of navigation */
+
+/* header*/
+#header{
+  position: fixed;
+  top: 0;
+  height: 8rem;
+  width: 100%;
+  border-bottom: 2px solid #f7f7f7;
+  background-color: #fff;
+  z-index: 50;
+}
+
+.profile{
+  padding: 20px;
+}
+.profile-pic{
+  padding: 0 15px;
+}
+.profile-user{
+  margin: 8px;
+}
+.profile-user a{
+  color: #000;
+}
+
+.profile-user span{
+  font-weight: bold;
+  color: #606060;
+  font-size: 2rem;
+}
+.profile-user span:hover{
+  color: #22BC9C;
+}
+
+
+.search-bar{
+  max-width: 320px;
+  border: 1px solid #f7f7f7;
+  border-radius: 50px;
+  margin: 1.2rem;
+  display: inline-block;
+}
+
+
+#search{
+  max-width: 25px;
+  opacity: 0.3;
+
+}
+
+
+/* footer */
+
+#player{
+  background: #22BC9C;
+  position: fixed;
+  bottom: 0;
+  height: 10rem;
+  width: 100%;
+  z-index: 30;
+}
+#controllers{
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+#controllers img{
+  padding: 1rem;
+}
+
+
+.music_info_container{
+  position: relative;
+  display: block;
+  text-align: center;
+  padding: 0.5em;
+  width: 100%;
+}
+.music_info{
+  display: flex;
+  flex-flow: row wrap;
+}
+.music_info >div{
+  flex: 1 0 0;
+}
+/* ONCE A SONG/MUSIC IS HOVER, THE PLAY BUTTON WILL SHOW */
+.music_info:hover .play_btn{
+  visibility: visible;
+}
+/* ONCE A SONG/MUSIC IS HOVER, THE BACKGROUND COLOR CHANGES */
+.music_info:hover{
+  background-color: gray;
+}
+.play_btn{
+  float:left;
+  visibility: hidden;
+  transform: translateY(25%);
+}
+/* TO HAVE THE POINTER ON THE PLAY BUTTON A POINTER */
+.play_btn:hover{
+  cursor:pointer;
+}
+.text-carousel{
+  width: 50px;
+  line-height: 1.5;
+  margin: 0 10rem;
+  position: absolute;
+  top: 5rem;
+  left: -5rem;
+  color: #fff;
+}
+.banner{
+  position: relative;
+  margin: 2rem 0;
+}
+
+#searchbar{
+  position: relative;
+  top: -4.3rem;
+  left: 7rem;
+}
+.image-inside{
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+.search-box{
+  padding: 0 6rem;
+}
+
+.card-cover{
+  width: 20.3rem;
+}
+.card-cover:hover{
+  transform: scale(1.2);
+  transition: transform .3s ease;
+}
+.card-body{
+  text-align: center;
+  color: #2c3e50;
+}
+.rounded-btn{
+  border-radius: 50px;
+}
+.faqs_info:hover{
+  color: #2c3e50;
+}
+.fa-play-circle:hover{
+  transform: scale(1.2);
+}
+/*Faq Page Search*/
+#custom-search-input {
+  /*margin:0;*/
+  /*margin-top: 10px;*/
+  /*padding: 0;*/
+  width: 50%;
+}
+#logoutbutton{
+  position: fixed;
+  right: 20px;
+  top: 20px;
+}
+
+#logoutbutton button{
+  outline: none;
+  border: none;
+}
+
+
+.row-main{
+  justify-content: center;
+  text-align: center;
+
+}
+.row{
+  text-align: center;
+}
+
+.row-main img{
+  width: 100%;
+}
+
+.row-main-col img{
+  height: 50%;
+}
+
+.row-main-col{
+  height: 40%;
+  position: relative;
+}
+
+.row-main-col h3{
+  width: 50%;
+  position: absolute;
+  top: 40%;
+}
+
+
+
+button{
+  outline: none !important;
+}

@@ -1,0 +1,58 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body, html {
+  height: 100%;
+}
+.bg {
+  height: 100%;
+  background-image: url("../images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+.container{
+  padding: 10vh 29vh;
+
+}
+.container h2{
+  font-size: 31px;
+
+}
+.logo{
+  text-align: center;
+}
+.logo img{
+  margin-bottom: -35px;
+}
+.input-login{
+  padding: 25px;
+  border: none;
+  border-radius: 50px;
+  margin-top: 5%;
+}
+.buttons{
+  margin: 5% 0;
+}
+.buttons a{
+  float: right;
+  margin-top: 3%;
+}
+.btn-login{
+  padding: 2% 10%;
+  border-radius: 50px;
+}
+
+@media (max-width: 991px) {
+  .container{
+    padding: 10vh;
+  }
+}
