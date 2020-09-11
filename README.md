@@ -1,6 +1,8 @@
 # Soundly
 A music web application where user will be able to listen to music with admin interface.
 This is a group academic project focus to understand PHP.
+
+Live Demo: http://soundly.mdmazo.com/
 ## Login Sample Details
     - Username: test1
     - Pass: test1
